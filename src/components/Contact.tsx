@@ -1,13 +1,36 @@
+import { useRef, useState } from "react";
+import loadingImage from "../assets/loader.svg";
+
 export const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulación de envío
+    setTimeout(() => {
+      setLoading(false);
+      setSent(true);
+      if (form.current) {
+        form.current.reset();
+      }
+    }, 2000); // 2 segundos
+  };
+
+  const closeModal = () => setSent(false);
+
   return (
     <section id="contacto" className="contact section full-lg-screen">
       <div className="container">
-        <h2 className="section-title">¿Interesado?</h2>
+        <h1 className="section-title">¿INTERESADO?</h1>
         <article className="contact-cards">
           <aside className="contact-card box-shadow-1">
             <svg
-              width="37"
-              height="28"
+              width="32"
+              height="32"
               viewBox="0 0 37 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +47,7 @@ export const Contact = () => {
           </aside>
           <aside className="contact-card box-shadow-1">
             <svg
-              width="33"
+              width="32"
               height="32"
               viewBox="0 0 33 32"
               fill="none"
@@ -35,7 +58,7 @@ export const Contact = () => {
                 fill="navy"
               />
             </svg>
-            <h5>TELEFONO</h5>
+            <h5>TELÉFONO</h5>
             <small>
               <a href="tel:+51973694599">(+51 973694599)</a>
             </small>
@@ -43,7 +66,7 @@ export const Contact = () => {
           <aside className="contact-card box-shadow-1">
             <svg
               width="32"
-              height="24"
+              height="32"
               viewBox="0 0 32 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +86,8 @@ export const Contact = () => {
           <aside className="contact-card box-shadow-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
             >
               <path d="M16.018,3.815L15.232,8h-4.966l0.716-3.815L9.018,3.815L8.232,8H4v2h3.857l-0.751,4H3v2h3.731l-0.714,3.805l1.965,0.369 L8.766,16h4.966l-0.714,3.805l1.965,0.369L15.766,16H20v-2h-3.859l0.751-4H21V8h-3.733l0.716-3.815L16.018,3.815z M14.106,14H9.141 l0.751-4h4.966L14.106,14z" />
@@ -106,7 +129,11 @@ export const Contact = () => {
             </small>
           </aside>
         </article>
-        <form className="contact-form box-shadow-1">
+        <form
+          ref={form}
+          onSubmit={handleSubmit}
+          className="contact-form box-shadow-1"
+        >
           <input
             type="text"
             name="name"
@@ -120,7 +147,6 @@ export const Contact = () => {
             name="email"
             placeholder="Ingresa tu correo"
             title="Email incorrecto"
-            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required
           />
           <textarea
@@ -130,32 +156,68 @@ export const Contact = () => {
             placeholder="Déjame tus comentarios"
             required
           ></textarea>
-          <div className="contact-form-loader text-center none">
-            <img src="assets/loader.svg" alt="Enviando..." />
-          </div>
+
+          {loading && (
+            <div className="contact-form-loader text-center">
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fillRule="evenodd">
+                  <g transform="translate(1 1)" strokeWidth="2">
+                    <circle strokeOpacity=".5" cx="18" cy="18" r="18" />
+                    <path d="M36 18c0-9.94-8.06-18-18-18">
+                      <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 18 18"
+                        to="360 18 18"
+                        dur="1s"
+                        repeatCount="indefinite"
+                      />
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          )}
           <input type="submit" className="btn" value="ENVIAR MENSAJE" />
         </form>
-        <article id="gracias" className="modal">
-          <div className="modal-content">
-            <article className="contact-form-response">
-              <h3>
-                !Muchas Gracias!
-                <br />
-                Por tus comentarios
-              </h3>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
-                <path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
-                <path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
-              </svg>
-            </article>
-          </div>
-        </article>
+        {sent && (
+          <article id="gracias" className="modal-form is-active">
+            <div className="contact-modal-content">
+              <article className="contact-form-response">
+                <a className="contact-modal-close" onClick={closeModal}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+                  </svg>
+                </a>
+                <h3>
+                  !Muchas Gracias!
+                  <br />
+                  Por tus comentarios
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+                  <path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                  <path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+                </svg>
+              </article>
+            </div>
+          </article>
+        )}
       </div>
     </section>
   );

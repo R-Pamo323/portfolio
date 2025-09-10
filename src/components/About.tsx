@@ -28,7 +28,12 @@ export const About = () => {
             dejar huella con cada línea de código.
           </p>
           <div className="text-center text-lg-right">
-            <a className="btn" href={cvFile} target="_blank" rel="noopener">
+            <a
+              className="about-btn"
+              href={cvFile}
+              target="_blank"
+              rel="noopener"
+            >
               DESCARGA MI CV
             </a>
           </div>

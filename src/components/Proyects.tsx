@@ -79,7 +79,7 @@ export const Proyects = () => {
           />
           <aside className="portfolio-card-info">
             <div>
-              <h3>San Fernando</h3>
+              <h3>San Fernando Vales</h3>
               <p>
                 Aplicativo de San Fernando para gestionar, transferir vales de
                 pavos y cerdos, también permite ver recetas de los productos,
@@ -263,7 +263,7 @@ export const Proyects = () => {
           <article className="portfolio-modal">
             <img src={Portfolio3} alt="Trabajo 3" />
             <div className="portfolio-info">
-              <h2>San Fernando</h2>
+              <h2>San Fernando Vales</h2>
               <p>
                 Aplicativo de San Fernando para gestionar, transferir vales de
                 pavos y cerdos, también permite ver recetas de los productos,

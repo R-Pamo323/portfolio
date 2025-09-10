@@ -23,8 +23,29 @@ export const ScrollSnap = () => {
       }
     };
 
+    // 🔥 Actualizar el index cuando una sección esté en viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const newIndex = Array.from(sections).indexOf(
+              entry.target as HTMLElement
+            );
+            if (newIndex !== -1) index = newIndex;
+          }
+        });
+      },
+      { threshold: 0.6 } // considera "visible" si 60% de la sección se ve
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
     window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => window.removeEventListener("wheel", handleWheel);
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      observer.disconnect();
+    };
   }, []);
 
   return null;
