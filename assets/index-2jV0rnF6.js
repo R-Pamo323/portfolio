@@ -1,4 +1,4 @@
-import{r as X,g as ft}from"./index-B8J77QNk.js";var A={exports:{}},L={exports:{}},k={exports:{}};/*!
+import{r as X,g as ft}from"./index-C2kVr9YV.js";var A={exports:{}},L={exports:{}},k={exports:{}};/*!
  * getSize v2.0.3
  * measure size of elements
  * MIT license
