@@ -184,14 +184,12 @@ export const Proyects = () => {
                 información sobre problemas médicos frecuentes, permitiendo
                 gestionar apuntes en texto y audio para cada tema.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                App Móvil
+                <span>App Móvil</span>
                 <b>HERRAMIENTAS:</b>
-                Dart - Flutter - Figma
+                <span>Dart - Flutter - Figma</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.masuno.nursepro&hl=es_419"
@@ -227,14 +225,12 @@ export const Proyects = () => {
                 específicas. También puedes inscribirte como local o como
                 profesor y tener estadisticas de acuerdo a tu perfil.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                App Móvil
+                <span>App Móvil</span>
                 <b>HERRAMIENTAS:</b>
-                Dart - Flutter - Figma
+                <span>Dart - Flutter - Figma</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.masuno.boostusuario&hl=es_PE"
@@ -270,14 +266,12 @@ export const Proyects = () => {
                 ubicación de los locales y mostrar locales donde podras canjear
                 tus respectivos vales.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                App Móvil
+                <span>App Móvil</span>
                 <b>HERRAMIENTAS:</b>
-                Dart - Flutter - Figma
+                <span>Dart - Flutter - Figma</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://play.google.com/store/search?q=san%20fernando&c=apps&hl=es_PE"
@@ -313,14 +307,12 @@ export const Proyects = () => {
                 Con la posibilidad de agregar pagos frecuentes, grupos de pagos,
                 recargas de saldo y transferencia de dinero.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                App Móvil
+                <span>App Móvil</span>
                 <b>HERRAMIENTAS:</b>
-                Dart - Flutter - Figma
+                <span>Dart - Flutter - Figma</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://play.google.com/store/apps/details/Xaggo?id=com.masuno.xaggo&hl=es"
@@ -356,14 +348,12 @@ export const Proyects = () => {
                 tu lista de reproducción, agregar a favoritos y descargar los
                 audios.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                App Móvil
+                <span>App Móvil</span>
                 <b>HERRAMIENTAS:</b>
-                Dart - Flutter - Figma
+                <span>Dart - Flutter - Figma</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.masuno.catholicshorts&hl=es"
@@ -398,14 +388,12 @@ export const Proyects = () => {
                 próximos partidos, plantilla, trofeos, galería de fotos y
                 noticias.
               </p>
-              <br />
-              <br />
-              <br />
+
               <aside className="portfolio-details">
                 <b>TIPO:</b>
-                Página Web Responsive
+                <span>Página Web Responsive</span>
                 <b>HERRAMIENTAS:</b>
-                React - TypeScript
+                <span>React - TypeScript</span>
                 <b>ENLACE:</b>
                 <a
                   href="https://r-pamo323.github.io/Leones-del-Sur/"

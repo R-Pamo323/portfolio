@@ -23,7 +23,7 @@ export const HeroImage = () => {
             <br />
             <br />
             <br />
-            <a href="#contacto" className="btn">
+            <a href="#contacto" className="hero-image-btn">
               CONTÁCTAME
             </a>
           </div>

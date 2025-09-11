@@ -28,7 +28,7 @@ export const Testimonials = () => {
                     a más personas y a tener un lugar donde las personas puedan
                     estar más al pendiente del club y de sus logros.
                   </blockquote>
-                  <h2 className="text-first-color">LEONES DEL SUR</h2>
+                  <h2 className="text-first-color">Leones Del Sur</h2>
                   <h5>Gerente de Marketing</h5>
                 </div>
               </div>
