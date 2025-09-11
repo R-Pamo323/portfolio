@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import loadingImage from "../assets/loader.svg";
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
