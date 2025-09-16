@@ -253,7 +253,7 @@ p {
   padding: 4px 20px 10px 20px;
   opacity: 0;
   transform: translateY(10px); /* 👈 para efecto */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  /*transition: opacity 0.3s ease, transform 0.3s ease;*/
   pointer-events: none; /* para que no interfiera cuando está oculto */
   z-index: 2000;
   display: flex;
@@ -275,7 +275,49 @@ p {
   padding: 0.8rem 0rem;
   font-size: 1.5rem;
   position: relative;
-  transition: color 0.3s ease, translate 0.3s ease;
+  /*transition: color 0.3s ease, translate 0.3s ease;*/
+  transition: 0.5s;
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.value:focus,
+.value:active {
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #2F81F7;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.sidebar:hover .value:not(:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95);
 }
 
 .sidebar a:hover {
@@ -287,7 +329,6 @@ p {
 .sidebar nav a {
   opacity: 0;
   transform: translateX(20px);
-
 }
 
 .sidebar.open nav a {
@@ -646,12 +687,18 @@ p {
   align-items: center;
   transition: "background 0.5s ease";
   padding: 30px;
+
+  perspective: 1000px;
+  /*box-shadow: 0 0 0 5px #ffffff80;*/
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .proyectsImg {
   width: auto;
   height: 300px;
   object-fit:contain; 
+
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .portfolio-card-info h3 {
@@ -683,13 +730,24 @@ p {
   color: var(--white-color);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s ease-in-out;
+  /*transition: all 0.5s ease-in-out;*/
+
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   
+}
+
+.portfolio-card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 .portfolio-card:hover .portfolio-card-info {
   opacity: 1;
   pointer-events: auto;
+
+  transform: rotateX(0deg);
 }
 
 .portfolio-card-info > div {
@@ -803,6 +861,36 @@ p {
 .modal#gracias:target {
   opacity: 1;
   pointer-events: auto;
+}
+
+.slide-in-fwd-center {
+	-webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
 }
 
 /* 📱 Estilos para móviles (pantallas hasta 768px) */

@@ -102,19 +102,19 @@ export const Cabecera = () => {
           ✖
         </button>
         <nav>
-          <a href="#inicio" onClick={closeMenu}>
+          <a href="#inicio" onClick={closeMenu} className="value">
             Home
           </a>
-          <a href="#acerca" onClick={closeMenu}>
+          <a href="#acerca" onClick={closeMenu} className="value">
             Acerca
           </a>
-          <a href="#proyectos" onClick={closeMenu}>
+          <a href="#proyectos" onClick={closeMenu} className="value">
             Proyectos
           </a>
-          <a href="#testimonios" onClick={closeMenu}>
+          <a href="#testimonios" onClick={closeMenu} className="value">
             Testimonios
           </a>
-          <a href="#contacto" onClick={closeMenu}>
+          <a href="#contacto" onClick={closeMenu} className="value">
             Contacto
           </a>
         </nav>

@@ -32,11 +32,29 @@ export const ScrollSnap = () => {
               entry.target as HTMLElement
             );
             if (newIndex !== -1) index = newIndex;
+            if (entry.target.id === "proyectos") {
+              const cards = entry.target.querySelectorAll(".portfolio-card");
+
+              if (entry.isIntersecting) {
+                // 🔥 Reiniciar animación en cada card
+                cards.forEach((card, i) => {
+                  card.classList.remove("slide-in-fwd-center");
+                  void (card as HTMLElement).offsetWidth; // 👈 fuerza reflow
+                  //card.classList.add("slide-in-fwd-center");
+                  setTimeout(() => {
+                    card.classList.add("slide-in-fwd-center");
+                  }, i * 250); // animación escalonada*/
+                });
+              }
+            }
           }
         });
       },
       { threshold: 0.6 } // considera "visible" si 60% de la sección se ve
     );
+
+    const proyectosSection = document.querySelector("#proyectos");
+    if (proyectosSection) observer.observe(proyectosSection);
 
     sections.forEach((section) => observer.observe(section));
 
