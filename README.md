@@ -1,70 +1,35 @@
-# React + TypeScript + Vite
+# 🚀 Portafolio Personal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Rodrigo Pamo** - Front-End Developer & Software Engineer | Mobile Specialist
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bienvenido al repositorio de mi portafolio personal. Aquí muestro mis proyectos, habilidades y experiencia en el desarrollo de software, destacando mi especialización en tecnologías móviles y mi conocimiento en desarrollo web frontend.
 
-## Expanding the ESLint configuration
+🌐 **Sitio en vivo:** [r-pamo323.github.io/portfolio](https://r-pamo323.github.io/portfolio/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 👨‍💻 Sobre Mí
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Soy un **Mobile & Frontend Developer - Software Engineer Developer** radicado en Arequipa, Perú. Me especializo principalmente en el desarrollo móvil (construyendo aplicaciones fluidas, escalables e intuitivas) y cuento con sólidas habilidades en el entorno frontend web. Me apasiona transformar ideas en productos digitales funcionales y atractivos.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologías del Portafolio
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este proyecto fue construido desde cero utilizando herramientas modernas para garantizar un rendimiento óptimo y una gran experiencia de usuario:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Core:** React 19 + TypeScript
+- **Build Tool:** Vite (para un entorno de desarrollo ultra rápido)
+- **Librerías UI/UX:** \* `flickity` y `react-flickity-component` para carruseles interactivos.
+  - `react-typed` para animaciones de texto dinámicas.
+  - `colorthief` para extraer paletas de colores de las imágenes en tiempo real.
+- **Despliegue:** GitHub Pages
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Instalación y Uso Local
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# portfolio
+Si deseas correr este proyecto de manera local para ver el código fuente:
+
+1. Clona este repositorio:
+   ```bash
+   git clone [https://github.com/r-pamo323/portfolio.git](https://github.com/r-pamo323/portfolio.git)
+   ```

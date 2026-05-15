@@ -10,7 +10,8 @@ export const About = () => {
             <h1>Rodrigo Pamo Delgado</h1>
             <br />
             <h5>
-              Frontend <i>Developer</i>
+              <i>Mobile & Frontend Developer</i>{" "}
+              <i>- Software Engineer Developer</i>
             </h5>
           </aside>
           <p>
