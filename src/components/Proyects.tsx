@@ -19,48 +19,25 @@ export const Proyects = () => {
       <div className="container">
         <h1 className="section-title">PROYECTOS</h1>
         <a
-          href="#trabajo-1"
+          href="#trabajo-4"
           className="portfolio-card"
           style={{
-            background: colors["trabajo-1"] || "#eee",
+            background: colors["trabajo-4"] || "#eee",
           }}
         >
           <ColorImage
-            src={Portfolio1}
-            alt="Trabajo 1"
-            onColorExtracted={(c) => handleColor("trabajo-1", c)}
+            src={Portfolio4}
+            alt="Trabajo 4"
+            onColorExtracted={(c) => handleColor("trabajo-4", c)}
           />
           <aside className="portfolio-card-info">
             <div>
-              <h3>Nurse Pro</h3>
+              <h3>Xaggo</h3>
               <p>
-                Aplicativo para estudiantes de enfermería, proporcionando
-                información sobre problemas médicos frecuentes, permitiendo
-                gestionar apuntes en texto y audio para cada tema.
-              </p>
-            </div>
-          </aside>
-        </a>
-        <a
-          href="#trabajo-2"
-          className="portfolio-card"
-          style={{
-            background: colors["trabajo-2"] || "#eee",
-          }}
-        >
-          <ColorImage
-            src={Portfolio2}
-            alt="Trabajo 2"
-            onColorExtracted={(c) => handleColor("trabajo-2", c)}
-          />
-          <aside className="portfolio-card-info">
-            <div>
-              <h3>Boost</h3>
-              <p>
-                Aplicación Móvil para facilitar el alquiler de canchas de tenis
-                y de instructores, tanto para prácticas como para reservas
-                específicas. También puedes inscribirte como local o como
-                profesor y tener estadisticas de acuerdo a tu perfil.
+                Aplicativo para realizar pagos de servicios(teléfono, cable,
+                luz, agua, etc) desde USA de forma económica, rápida y segura.
+                Con la posibilidad de agregar pagos frecuentes, grupos de pagos,
+                recargas de saldo y transferencia de dinero.
               </p>
             </div>
           </aside>
@@ -90,25 +67,25 @@ export const Proyects = () => {
           </aside>
         </a>
         <a
-          href="#trabajo-4"
+          href="#trabajo-2"
           className="portfolio-card"
           style={{
-            background: colors["trabajo-4"] || "#eee",
+            background: colors["trabajo-2"] || "#eee",
           }}
         >
           <ColorImage
-            src={Portfolio4}
-            alt="Trabajo 4"
-            onColorExtracted={(c) => handleColor("trabajo-4", c)}
+            src={Portfolio2}
+            alt="Trabajo 2"
+            onColorExtracted={(c) => handleColor("trabajo-2", c)}
           />
           <aside className="portfolio-card-info">
             <div>
-              <h3>Xaggo</h3>
+              <h3>Boost</h3>
               <p>
-                Aplicativo para realizar pagos de servicios(teléfono, cable,
-                luz, agua, etc) desde USA de forma económica, rápida y segura.
-                Con la posibilidad de agregar pagos frecuentes, grupos de pagos,
-                recargas de saldo y transferencia de dinero.
+                Aplicación Móvil para facilitar el alquiler de canchas de tenis
+                y de instructores, tanto para prácticas como para reservas
+                específicas. También puedes inscribirte como local o como
+                profesor y tener estadisticas de acuerdo a tu perfil.
               </p>
             </div>
           </aside>
@@ -137,6 +114,30 @@ export const Proyects = () => {
             </div>
           </aside>
         </a>
+        <a
+          href="#trabajo-1"
+          className="portfolio-card"
+          style={{
+            background: colors["trabajo-1"] || "#eee",
+          }}
+        >
+          <ColorImage
+            src={Portfolio1}
+            alt="Trabajo 1"
+            onColorExtracted={(c) => handleColor("trabajo-1", c)}
+          />
+          <aside className="portfolio-card-info">
+            <div>
+              <h3>Nurse Pro</h3>
+              <p>
+                Aplicativo para estudiantes de enfermería, proporcionando
+                información sobre problemas médicos frecuentes, permitiendo
+                gestionar apuntes en texto y audio para cada tema.
+              </p>
+            </div>
+          </aside>
+        </a>
+
         <a
           href="#trabajo-6"
           className="portfolio-card"

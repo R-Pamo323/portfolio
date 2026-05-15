@@ -211,7 +211,7 @@ p {
 }
 
 .hero-image {
-  background-image: url('assets/hero-image-home.jpg');
+  background-image: url('assets/fondohero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -499,7 +499,7 @@ p {
 
 @media (max-width: 728px) {
   .hero-image {
-    background-image: url('assets/hero-image-home.jpg');
+    background-image: url('assets/fondohero.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1008,7 +1008,7 @@ p {
 }
 
 .hero-image-testimonial {
-  background-image: url('assets/hero-image-home.jpg');
+  background-image: url('assets/fondohero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

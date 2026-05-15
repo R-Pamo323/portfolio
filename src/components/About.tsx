@@ -1,4 +1,4 @@
-import cvFile from "../assets/CV-2025-RodrigoPamoDelgado.pdf";
+import cvFile from "../assets/CV-2026-RodrigoPamoDelgado.pdf";
 import Foto from "../assets/Foto.jpg";
 
 export const About = () => {
@@ -14,18 +14,24 @@ export const About = () => {
             </h5>
           </aside>
           <p>
-            👋 ¡Hola! Soy Rodrigo, un apasionado Desarrollador Frontend que
-            transforma ideas en aplicaciones móviles y web modernas.
-            <br /> 💻 Domino Flutter, React.js y Webflow, y también trabajo con
-            Android nativo (Java) y iOS nativo (Swift). <br />
-            🌐 Me gusta conectar experiencias digitales con API REST/GraphQL y
-            experimentar con tecnologías como Laravel, TypeScript y Node.js.{" "}
-            <br />⚡ Trabajo con metodologías ágiles (Scrum/Kanban) y disfruto
+            👋 ¡Hola! Soy Rodrigo, Desarrollador de Software con especialidad
+            principal en el mundo móvil y sólida experiencia en Frontend web.
+            <br />
+            📱 Mi enfoque es crear aplicaciones multiplataforma escalables con
+            Flutter (dominando BLoC y GetX), respaldado por mi conocimiento en
+            desarrollo nativo para Android (Java) e iOS (Swift).
+            <br />
+            💻 En la web, construyo interfaces modernas y responsivas con
+            React.js y TypeScript, utilizando herramientas como Tailwind CSS y
+            Bootstrap. <br />
+            🌐 Complemento mi perfil integrando experiencias digitales con APIs
+            REST y GraphQL, bases en Node.js, y un fuerte conocimiento en redes
+            y servidores que me da una visión integral del ecosistema. <br />
+            ⚡ Trabajo bajo metodologías ágiles (Scrum/Kanban) y disfruto
             colaborar con equipos usando GitHub y JIRA. <br />
-            🔧 Además, tengo experiencia en redes y servidores, lo que me da una
-            visión más completa del ecosistema tecnológico. <br />
             🚀 Mi meta es seguir aprendiendo, crear proyectos innovadores y
-            dejar huella con cada línea de código.
+            aportar valor en cada etapa del ciclo de vida del software con cada
+            línea de código.
           </p>
           <div className="text-center text-lg-right">
             <a
@@ -47,13 +53,15 @@ export const About = () => {
           <div className="skills-container">
             <h3>Flutter</h3>
             <h3>Dart</h3>
-            <h3>React</h3>
+            <h3>BLoC</h3>
+            <h3>GetX</h3>
+            <h3>ReactJS</h3>
             <h3>TypeScript</h3>
-            <h3>Java</h3>
+            <h3>Tailwind CSS</h3>
             <h3>JavaScript</h3>
             <h3>HTML5</h3>
             <h3>CSS3</h3>
-            <h3>Webflow</h3>
+            <h3>Java</h3>
           </div>
         </article>
       </div>
